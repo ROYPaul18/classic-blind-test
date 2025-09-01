@@ -12,9 +12,6 @@ export default function RootLayout({
     <html lang="fr">
       <body>
         <SessionProvider>
-          <header>
-            <h1>Blind Test de Musique Classique</h1>
-          </header>
           {children}
         </SessionProvider>
       </body>

@@ -9,10 +9,10 @@ interface ComposerGuessProps {
 }
 
 const ComposerGuess: React.FC<ComposerGuessProps> = ({
-  guess, 
-  setGuess, 
-  handleGuess, 
-  isCorrect, 
+  guess,
+  setGuess,
+  handleGuess,
+  isCorrect,
   handleStart
 }) => {
   return (
@@ -25,7 +25,7 @@ const ComposerGuess: React.FC<ComposerGuessProps> = ({
         onChange={(e) => setGuess(e.target.value)}
         placeholder="Votre réponse..."
       />
-      <button 
+      <button
         className="bg-green-500 text-white px-4 py-2 rounded-lg mb-4"
         onClick={handleGuess}
       >
@@ -34,13 +34,13 @@ const ComposerGuess: React.FC<ComposerGuessProps> = ({
 
       {isCorrect && (
         <div>
-          <button 
+          <button
             className="bg-black text-white px-4 py-2 rounded-lg"
             onClick={handleStart}
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-</svg>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
 
           </button>
         </div>
