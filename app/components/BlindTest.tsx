@@ -4,12 +4,10 @@ import { useState, useEffect } from 'react';
 import { signIn, useSession } from 'next-auth/react';
 import SpotifyWebApi from 'spotify-web-api-node';
 import { TrackObjectSimplified } from 'spotify-web-api-node';
-import { Music, Play, Pause, Volume2, Lightbulb, Trophy, X, Sparkles, Clock, User } from 'lucide-react';
+import { Music, Lightbulb, Trophy, X, Sparkles, Clock } from 'lucide-react';
 
 import MusicPlayer from './MusicPlayer';
 import ComposerGuess from './ComposerGuess';
-import HintSection from './HintSection';
-import Modal from './Modal';
 
 const spotifyApi = new SpotifyWebApi();
 
