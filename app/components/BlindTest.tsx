@@ -119,7 +119,7 @@ const BlindTest = () => {
       setShowModalError(true);
       revealHint();
 
-      if (errors + 1 >= 3) {
+      if (errors + 1 >= 4) {
         setTimeout(() => {
           alert(`Désolé, vous avez atteint 3 erreurs. La bonne réponse était ${correctAnswer}.`);
           setIsCorrect(false);
