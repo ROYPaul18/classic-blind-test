@@ -16,8 +16,8 @@ const ComposerGuess: React.FC<ComposerGuessProps> = ({
   handleStart
 }) => {
   return (
-    <div className="w-1/2 p-4">
-      <h2 className="text-2xl mb-4">Devinez le compositeur</h2>
+    <div className="p-4">
+      <h2 className="text-2xl mb-4 text-white">Devinez le compositeur</h2>
       <input
         className="border px-4 py-2 mb-4 w-full"
         type="text"
